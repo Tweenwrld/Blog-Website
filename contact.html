@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechInsight</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1>Contact TechInsight</h1>
+            <p>We'd love to hear from you. Get in touch with our team!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>General Inquiries: <a href="leonard383boma@gmail.com">leonard383boma@gmail.com</a></p>
+                                <p>Editorial Team: <a href="leonard383boma@gmail.com">leonard383boma@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>Main Office: +254 755 962 921</p>
+                                <p>Support Line: +254 755 962 921</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>TechInsight Headquarters</p>
+                                <p>123 Innovation Drive</p>
+                                <p>Kiambu County, JUJA 94105</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://x.com/Tweenhaven35"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/leonard-boma-631aa9234/?originalSubdomain=ke"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form animate-on-scroll">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="editorial">Editorial Feedback</option>
+                                <option value="advertising">Advertising</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                        <p id="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item animate-on-scroll">
+                    <h3>How long does it take to get a response?</h3>
+                    <p>We typically respond to inquiries within 1-2 business days. During peak times, it may take up to 3-4 days.</p>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <h3>Can I submit a guest post?</h3>
+                    <p>Yes! We welcome guest posts. Please send your pitch to leonard383boma@gmail.com with a brief outline of your proposed article.</p>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <h3>Are you open to partnerships?</h3>
+                    <p>Absolutely! We're always interested in potential collaborations. Reach out to our partnerships team for more information.</p>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <h3>How can I advertise on TechInsight?</h3>
+                    <p>For advertising inquiries, please contact our marketing team at leonard383boma@gmail.com for current rates and options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest tech insights</p>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </div>
+                <p id="newsletter-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechInsight</h2>
+                    <p>Exploring the frontiers of technology</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://x.com/Tweenhaven35"><i class="fab fa-x"></i></a>
+                        <a href="https://www.linkedin.com/in/leonard-boma-631aa9234/?originalSubdomain=ke"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechInsight. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
