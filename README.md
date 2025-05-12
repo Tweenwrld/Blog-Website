@@ -59,15 +59,3 @@ feb-2025-final-project-and-deployment-Tweenwrld/
 - **Fonts:** System fonts (Segoe UI, Tahoma, Verdana, etc.)
 - **Images:** Replace with your own or use royalty-free sources.
 
-## License
-
-[Your License Here]
-
-## Contact
-
-For questions, feedback, or contributions, please contact:
-- [Your Name or Team]
-- [Your Email or Website]
-
----
-Enjoy your new blog website!
