@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechInsight</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1>Our Latest Articles</h1>
+            <p>Insights, tutorials, and trends from the tech world</p>
+        </div>
+    </section>
+
+    <section class="blog-posts">
+        <div class="container">
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search articles...">
+                    <button type="submit" class="btn"><i class="fas fa-search"></i> Search</button>
+                </form>
+                <p id="no-results" style="display: none; text-align: center; margin-top: 10px;"></p>
+            </div>
+            
+            <div class="category-filter">
+                <a href="blog.html" class="active">All</a>
+                <a href="post1.html">AI</a>
+                <a href="post2.html">Web Development</a>
+                <a href="post3.html">Security</a>
+                <a href="post5.html">Mobile Technology</a>
+                <a href="post4.html">Cloud</a>
+                <a href="post6.html">Data Science</a>
+            </div>
+            
+            <div class="posts-grid">
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/AI-Technology.jpeg" alt="AI Technology">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">AI</span>
+                        <h3>The Evolution of AI in 2025</h3>
+                        <p>How artificial intelligence has transformed industries in unexpected ways.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 5, 2025</span>
+                            <span><i class="far fa-user"></i> John Doe</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="1" onclick="toggleLike('1')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="1">42</span>
+                            </button>
+                            <button class="save-btn" data-post="1" onclick="toggleSave('1')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post1.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/Web-Development.jpeg" alt="Web Development">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Web Development</span>
+                        <h3>Modern Frontend Frameworks Compared</h3>
+                        <p>An analysis of the most popular JavaScript frameworks and their use cases.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 3, 2025</span>
+                            <span><i class="far fa-user"></i> Jane Smith</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="2" onclick="toggleLike('2')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="2">38</span>
+                            </button>
+                            <button class="save-btn" data-post="2" onclick="toggleSave('2')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post2.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/Cybersecurity.jpeg" alt="Cybersecurity">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Security</span>
+                        <h3>Protecting Your Digital Footprint</h3>
+                        <p>Essential cybersecurity practices everyone should implement.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 1, 2025</span>
+                            <span><i class="far fa-user"></i> Mark Johnson</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="3" onclick="toggleLike('3')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="3">29</span>
+                            </button>
+                            <button class="save-btn" data-post="3" onclick="toggleSave('3')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post3.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/Cloud-Computing.jpeg" alt="Cloud Computing">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Cloud</span>
+                        <h3>Serverless Architecture: The Future of Backend</h3>
+                        <p>How serverless computing is changing the way we build applications.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> April 28, 2025</span>
+                            <span><i class="far fa-user"></i> Alex Taylor</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="4" onclick="toggleLike('4')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="4">24</span>
+                            </button>
+                            <button class="save-btn" data-post="4" onclick="toggleSave('4')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post4.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/Mobile-Development.jpeg" alt="Mobile Development">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Mobile</span>
+                        <h3>Cross-Platform App Development in 2025</h3>
+                        <p>Tools and frameworks that are revolutionizing mobile development.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> April 25, 2025</span>
+                            <span><i class="far fa-user"></i> Sarah Chen</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="5" onclick="toggleLike('5')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="5">31</span>
+                            </button>
+                            <button class="save-btn" data-post="5" onclick="toggleSave('5')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post5.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card animate-on-scroll">
+                    <div class="post-image">
+                        <img src="Blog-Website/Data Analysis icon.jpeg" alt="Data Science">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Data Science</span>
+                        <h3>Ethical Considerations in Data Analysis</h3>
+                        <p>Balancing innovation with privacy and fairness in the age of big data.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> April 22, 2025</span>
+                            <span><i class="far fa-user"></i> Michael Wong</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="like-btn" data-post="6" onclick="toggleLike('6')">
+                                <i class="far fa-heart"></i> <span class="like-count" data-post="6">27</span>
+                            </button>
+                            <button class="save-btn" data-post="6" onclick="toggleSave('6')">
+                                <i class="far fa-bookmark"></i> Save
+                            </button>
+                        </div>
+                        <a href="post6.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest tech insights</p>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </div>
+                <p id="newsletter-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechInsight</h2>
+                    <p>Exploring the frontiers of technology</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://x.com/Tweenhaven35"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/leonard-boma-631aa9234/?originalSubdomain=ke"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechInsight. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
